@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InnovifyTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkf-Ee-BcT">
+                                <rect key="frame" x="40" y="254" width="295" height="30"/>
+                                <color key="backgroundColor" red="0.13712062880000001" green="0.99947720770000004" blue="0.96423088749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ViewController lifecycle test">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPresentNewInstancePressed" destination="3qR-Mt-e4N" eventType="touchUpInside" id="X1V-Kv-hgf"/>
+                                    <segue destination="3qR-Mt-e4N" kind="show" identifier="segueLifecycle" id="B8l-du-0iI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDB-2s-huz">
+                                <rect key="frame" x="40" y="62" width="295" height="30"/>
+                                <color key="backgroundColor" red="0.13712062880000001" green="0.99947720770000004" blue="0.96423088749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Save User">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPresentNewInstancePressed" destination="3qR-Mt-e4N" eventType="touchUpInside" id="M7P-ia-fPm"/>
+                                    <action selector="buttonSaveUserPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="UoC-aH-Ecc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iv3-q0-bvF">
+                                <rect key="frame" x="40" y="100" width="295" height="30"/>
+                                <color key="backgroundColor" red="0.13712062880000001" green="0.99947720770000004" blue="0.96423088749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load User">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPresentNewInstancePressed" destination="3qR-Mt-e4N" eventType="touchUpInside" id="WY0-F3-04u"/>
+                                    <action selector="buttonRetriveUserPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCo-Gi-AFp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-35-qq3">
+                                <rect key="frame" x="40" y="333" width="295" height="30"/>
+                                <color key="backgroundColor" red="0.13712062880000001" green="0.99947720770000004" blue="0.96423088749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="change language">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonChangeLanguagePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbY-Gs-Nr9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qDB-2s-huz" secondAttribute="trailing" constant="40" id="5RX-g5-Rsn"/>
+                            <constraint firstItem="Iv3-q0-bvF" firstAttribute="top" secondItem="qDB-2s-huz" secondAttribute="bottom" constant="8" id="64L-c5-Ufm"/>
+                            <constraint firstAttribute="trailing" secondItem="Gkf-Ee-BcT" secondAttribute="trailing" constant="40" id="6dW-T6-eBN"/>
+                            <constraint firstItem="Iv3-q0-bvF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="9Og-pF-5jZ"/>
+                            <constraint firstItem="qDB-2s-huz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="MI3-fY-o2Z"/>
+                            <constraint firstItem="Gkf-Ee-BcT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="TI5-IE-95g"/>
+                            <constraint firstItem="qDB-2s-huz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="Wb5-k0-e3J"/>
+                            <constraint firstItem="2fo-35-qq3" firstAttribute="top" secondItem="Gkf-Ee-BcT" secondAttribute="bottom" constant="49" id="af0-k4-uDE"/>
+                            <constraint firstItem="2fo-35-qq3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="gZx-sT-40J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2fo-35-qq3" secondAttribute="trailing" constant="24" id="qPC-hy-XlP"/>
+                            <constraint firstAttribute="trailing" secondItem="Iv3-q0-bvF" secondAttribute="trailing" constant="40" id="tBa-OZ-Zbe"/>
+                            <constraint firstItem="Gkf-Ee-BcT" firstAttribute="top" secondItem="Iv3-q0-bvF" secondAttribute="bottom" constant="124" id="tXP-e0-YCQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnLifecycle" destination="Gkf-Ee-BcT" id="mFX-D6-wxL"/>
+                        <outlet property="buttonChangeLanguage" destination="2fo-35-qq3" id="0Wn-aH-PJ7"/>
+                        <outlet property="buttonRetriveUser" destination="Iv3-q0-bvF" id="oLm-z3-ews"/>
+                        <outlet property="buttonSaveUser" destination="qDB-2s-huz" id="6V2-se-LpC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="119"/>
+        </scene>
+        <!--View Controller Life Cycle-->
+        <scene sceneID="acL-ah-ei1">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerLifeCycle" id="3qR-Mt-e4N" customClass="ViewControllerLifeCycle" customModule="InnovifyTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zAF-r8-SVp"/>
+                        <viewControllerLayoutGuide type="bottom" id="OmF-XT-HAm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hmh-hg-1BI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-Yw-Wlb">
+                                <rect key="frame" x="56" y="120" width="263" height="30"/>
+                                <color key="backgroundColor" red="0.13712062880000001" green="0.99947720770000004" blue="0.96423088749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Present New Instance">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPresentNewInstancePressed" destination="3qR-Mt-e4N" eventType="touchUpInside" id="W36-iJ-eIJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5B-22-MvC">
+                                <rect key="frame" x="56" y="170" width="263" height="30"/>
+                                <color key="backgroundColor" red="0.13712062880000001" green="0.99947720770000004" blue="0.96423088749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDismissSelfPressed" destination="3qR-Mt-e4N" eventType="touchUpInside" id="CEp-2E-KKR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6sW-Yw-Wlb" firstAttribute="leading" secondItem="hmh-hg-1BI" secondAttribute="leadingMargin" constant="40" id="3o6-pf-fTo"/>
+                            <constraint firstItem="d5B-22-MvC" firstAttribute="leading" secondItem="hmh-hg-1BI" secondAttribute="leadingMargin" constant="40" id="QXn-Dq-8zR"/>
+                            <constraint firstItem="d5B-22-MvC" firstAttribute="top" secondItem="6sW-Yw-Wlb" secondAttribute="bottom" constant="20" id="SkQ-Cp-9bV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6sW-Yw-Wlb" secondAttribute="trailing" constant="40" id="XSr-HI-Dfr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d5B-22-MvC" secondAttribute="trailing" constant="40" id="hzb-YT-Mdb"/>
+                            <constraint firstItem="6sW-Yw-Wlb" firstAttribute="top" secondItem="zAF-r8-SVp" secondAttribute="bottom" constant="100" id="y35-1f-0aA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDismiss" destination="d5B-22-MvC" id="f52-kU-TbP"/>
+                        <outlet property="buttonPresentINewnstance" destination="6sW-Yw-Wlb" id="Pwf-ZD-3tM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3T3-Mw-W5s" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="118"/>
+        </scene>
+    </scenes>
+</document>

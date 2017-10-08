@@ -1,0 +1,13 @@
+/* 
+  Localization.strings
+  InnovifyTest
+
+  Created by jetani kalpesh on 08/10/17.
+  Copyright © 2017 sigmacoder. All rights reserved.
+*/
+"change language" = "भाषा बदलो";
+"Present New Instance" = "नया उदाहरण दिखाएं";
+"ViewController lifecycle test" = "uiviewcontroller जीवनचक्र परीक्षण";
+"Load User" = "उपयोगकर्ता जानकारी लोड करें";
+"Dismiss" = "खारिज";
+"Save User" = "उपयोगकर्ता जानकारी सहेजें";

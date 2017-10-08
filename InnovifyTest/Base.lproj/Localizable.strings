@@ -1,0 +1,13 @@
+/* 
+  Localization.strings
+  InnovifyTest
+
+  Created by jetani kalpesh on 08/10/17.
+  Copyright © 2017 sigmacoder. All rights reserved.
+*/
+"change language" = "change language";
+"Present New Instance" = "Present New Instance";
+"ViewController lifecycle test" = "ViewController lifecycle test";
+"Load User" = "Load User";
+"Dismiss" = "Dismiss";
+"Save User" = "Save User";
